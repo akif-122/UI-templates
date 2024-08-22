@@ -15,7 +15,16 @@
     --grey-blue: #718096;
     --skyblue: #1ee2c4;
 }
-
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #8c8d8d4d;
+    border-radius: 10px;
+}
 body {
     font-family: "Noto Sans", sans-serif;
     background: url("../imgs/bg-pattern-flowery.svg");
@@ -23,6 +32,7 @@ body {
     background-position: 53.5% 84%;
     background-repeat: repeat;
     background-size: 377px 667px;
+    padding-top: 120px;
 }
 
 a {
@@ -33,12 +43,79 @@ a {
     overflow: hidden;
 }
 
+/* SEARCH SECTION START */
+.search-section{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    width: 100%;
+    height: calc(100vh - 145px);
+    background-color: var(--white);
+    z-index: 5;
+    background: url("../imgs/bg-pattern-flowery.svg") , #fff;
+    padding: 40px 10px;
+    overflow: auto;
+    transition: .5s ease;
+}
+.search-section.active{
+    transform: translateY(0%);
+}
+.search-section .closeSearch{
+    all: unset;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.search-section .closeSearch:hover{
+    color: var(--primary-color);
+}
+.search-section .no-item-found{
+    max-width: 700px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    isolation: isolate;
+
+}
+.search-section .no-item-found svg{
+    position: absolute;
+    width: 450px;
+    bottom: -100px;
+    z-index: -1;
+    fill: var(--primary-color);
+    opacity: .3;
+}
+.search-section h3{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--black-color);
+}
+.search-section .no-item-found p{
+    color: var(--black-color);
+    font-weight: 600;
+}
+/* SEARCH SECTION END */
+
 /* 
 ==================================================
      HEADER SECTION START
 ==================================================
 */
-.header .main-nav {
+.header  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.header  .main-nav {
     box-shadow: 0 3px 6px rgba(0, 0, 0, .08);
     padding: 10px 20px;
     align-items: center;
@@ -95,6 +172,8 @@ a {
 
 .header .main-nav .nav-right .cart-icon {
     position: relative;
+    cursor: pointer;
+    user-select: none;
 }
 
 .header .main-nav .nav-right .cart-icon span {
@@ -264,7 +343,7 @@ a {
     transition: .5s ease;
 
 }
-body.cart-active .item-card-section {
+body.cart-active .item-card-section:not(.searchItems) {
     width: calc(100% - 400px);
     transition: .5s ease;
 
@@ -452,6 +531,7 @@ body.cart-active .item-card-section {
     background-size: cover;
     padding-bottom: 170px;
     transition: .5s ease;
+    z-index: 1000;
 }
 body.cart-active .cart-section{
     width: 400px;
