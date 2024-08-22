@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- BOOTSTRAP 5 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+
+    <!-- FONTAWESOME ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- HEADER SECTION START -->
+        <header class="header">
+            <nav class="navbar main-nav">
+
+                <div class="d-block d-md-none">
+                    <button class="navToggler " id="navToggler"><i class="fa-solid fa-bars"></i></button>
+                </div>
+                
+                <div class="">
+                    <a href="#" class="navbar-brand">
+                        <img src="assets/imgs/logo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="navs mx-auto" id="navs">
+                    <button class="navClose d-md-none" id="navClose"><i class="fa-regular fa-circle-xmark"></i></button>
+                    <ul>
+                        <li><a href="#">Order</a></li>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Work</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-right d-flex justify-content-end align-items-center">
+                    <a href="#" class="user">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <div class="cart-icon d-none d-md-block" id="cartToggler">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span>0</span>
+                    </div>
+                </div>
+
+
+            </nav>
+
+            <div class="header-search">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-8">
+                        <div class="delivery">
+                            <p class="m-0">
+                                <i class="fa-solid fa-location-dot"></i> Deliver to <strong>Afshan Colony</strong>,
+                                <strong>Failabad</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="search-form">
+                            <form action="">
+                                <div class="form-group position-relative">
+                                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                    <input type="text" class="form-control shadow-none"
+                                        placeholder="Search for menu items e.g. Chicken, Burger, Fries.">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </header>
+        <!-- HEADER SECTION END -->
+
+        <!-- MAIN SECTION START -->
+        <section class="main-section">
+            <!-- CARDS SECTION START -->
+            <div class="item-card-section">
+                <div class="tabs-section">
+                    <ul>
+                        <li>
+                            <a href="#">Appeteasers</a>
+                        </li>
+                        <li>
+                            <a href="#">PERi-PERi Chicken</a>
+                        </li>
+                        <li>
+                            <a href="#">Sharing Platters</a>
+                        </li>
+                        <li>
+                            <a href="#">Burgers, Pita, Wrap</a>
+                        </li>
+                        <li>
+                            <a href="#">Casa Deals</a>
+                        </li>
+                        <li>
+                            <a href="#">Salads
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Sides</a>
+                        </li>
+                        <li>
+                            <a href="#">Nandino's</a>
+                        </li>
+                        <li>
+                            <a href="#">Drinks</a>
+                        </li>
+                        <li>
+                            <a href="#">Desserts</a>
+                        </li>
+                        <li>
+                            <a href="#">Add</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <!-- COL START -->
+
+                    <div class="col-lg-4 col-sm-6">
+
+                        <div class="item-img-card">
+                            <img src="assets/imgs/1707555342.jpg" width="100%" alt="">
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="card">
+                            <div class="card-img" style="background-image: url('assets/imgs/1668420027.jpg');">
+                                <h3 class="mb-0">Sharing Platters</h3>
+                            </div>
+                            <div class="card-body p-0">
+
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Full Chicken + 2 Regular Sides</h6>
+                                        <p>1 Full Chicken + 2 Regular Sides</p>
+                                    </div>
+                                    <p class="price">Rs. 2,890.00</p>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Full Chicken + 2 Regular Sides</h6>
+                                        <p>1 Full Chicken + 2 Regular Sides</p>
+                                    </div>
+                                    <p class="price">Rs. 2,890.00</p>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Full Chicken + 2 Regular Sides</h6>
+                                        <p>1 Full Chicken + 2 Regular Sides</p>
+                                    </div>
+                                    <p class="price">Rs. 2,890.00</p>
+                                </div>
+                                <!-- food-item -->
+
+
+                            </div>
+                        </div>
+                        <!-- CARD -->
+                        <!-- CARD -->
+                        <div class="card">
+                            <div class="card-img" style="background-image: url('assets/imgs/1611900279986084382.jpg');">
+                                <h3 class="mb-0">Salads</h3>
+                            </div>
+                            <div class="card-body p-0">
+
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Portuguese Salad</h6>
+                                        <p>Crisp Lettuce, Fresh Tomatoes, Spicy Mixed Olives, Cucumber, Green Peppers
+                                            And Onion</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 390.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Mediterranean Salad</h6>
+                                        <p>A Mix Of Salad Leaves, Mixed Peppers, Spicy Mixed Olives, Onion, Cucumber,
+                                            Tomato And Feta Cheese</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 570.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+
+
+
+                            </div>
+                        </div>
+                        <!-- CARD -->
+                        <!-- CARD -->
+                        <div class="card">
+                            <div class="card-img" style="background-image: url('assets/imgs/16119002161322686.jpg');">
+                                <h3 class="mb-0">Drinks</h3>
+                            </div>
+                            <div class="card-body p-0">
+
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Soft Drinks</h6>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 210.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Mineral Water</h6>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 150.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+
+
+
+                            </div>
+                        </div>
+                        <!-- CARD -->
+
+
+                    </div>
+                    <!-- COL END -->
+                    <!-- COL START -->
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- CARD -->
+                        <div class="card">
+                            <div class="card-img" style="background-image: url('assets/imgs/1668419769.jpg');">
+                                <h3 class="mb-0">Appeteasers</h3>
+                            </div>
+                            <div class="card-body p-0">
+
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Chicken Livers & A Portuguese Roll</h6>
+                                        <p>Saucy Chicken Livers With A Fresh Portuguese Roll</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="price">Rs. 390.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Cheesy Festa Fries</h6>
+                                        <p>Loaded PERi-PERi Chips Topped With Grilled Onions, Cheese Sauce And Parsely
+                                        </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="price">Rs. 390.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>3 Full Chicken Wings</h6>
+                                        <p>3 Full, Juicy Chicken Wings In Your Choice Of PERi-PERi Flavour</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 390.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+
+
+                            </div>
+                        </div>
+                        <!-- CARD -->
+                        <!-- CARD -->
+                        <div class="card">
+                            <div class="card-img" style="background-image: url('assets/imgs/1668419769.jpg');">
+                                <h3 class="mb-0">Burgers, Pita, Wrap</h3>
+                            </div>
+                            <div class="card-body p-0">
+
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Chicken Pita</h6>
+                                        <p>Tender Chicken Fillet, Crispy Veg Salad And Creamy Mayonnaise Served In A
+                                            Toasted Pita</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 690.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Chicken Pita</h6>
+                                        <p>Tender Chicken Fillet, Crispy Veg Salad And Creamy Mayonnaise Served In A
+                                            Toasted Pita</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 690.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Chicken Pita</h6>
+                                        <p>Tender Chicken Fillet, Crispy Veg Salad And Creamy Mayonnaise Served In A
+                                            Toasted Pita</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 690.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+
+
+
+
+                            </div>
+                        </div>
+                        <!-- CARD -->
+                        <!-- CARD -->
+                        <div class="card">
+                            <div class="card-img"
+                                style="background-image: url('assets/imgs/16119003111874709179.jpg');">
+                                <h3 class="mb-0">Sides</h3>
+                            </div>
+                            <div class="card-body p-0">
+
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>PERi-PERi Chips</h6>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 350.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Spicy Rice</h6>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 150.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Spicy Rice</h6>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 150.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Spicy Rice</h6>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 150.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Spicy Rice</h6>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 150.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+
+
+
+                            </div>
+                        </div>
+                        <!-- CARD -->
+
+
+                    </div>
+                    <!-- COL END -->
+                    <!-- COL START -->
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- CARD -->
+                        <div class="card">
+                            <div class="card-img" style="background-image: url('assets/imgs/1668420027 (1).jpg');">
+                                <h3 class="mb-0">PERi-PERi Chicken</h3>
+                            </div>
+                            <div class="card-body p-0">
+
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>1/4 Chicken</h6>
+                                        <p>Choose The Leg And Thigh Or The Breast And Wing</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 640.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>5 Full Chicken Wings</h6>
+                                        <p>5 Full, Juicy Chicken Wings In Your Choice Of PERi-PERi Flavour
+
+                                        </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 890.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>5 Full Chicken Wings</h6>
+                                        <p>5 Full, Juicy Chicken Wings In Your Choice Of PERi-PERi Flavour
+
+                                        </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 890.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>5 Full Chicken Wings</h6>
+                                        <p>5 Full, Juicy Chicken Wings In Your Choice Of PERi-PERi Flavour
+
+                                        </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 890.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+
+
+
+                            </div>
+                        </div>
+                        <!-- CARD -->
+                        <!-- CARD -->
+                        <div class="card">
+                            <div class="card-img" style="background-image: url('assets/imgs/1668419769.jpg');">
+                                <h3 class="mb-0">Casa Deals</h3>
+                            </div>
+                            <div class="card-body p-0">
+
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Pulled Chicken Burger</h6>
+                                        <p>Saucy Pulled Chicken, Grilled Onion And A Slice Of Cheese Served In A Toasted
+                                            Portuguese Roll</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 750.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Pulled Chicken Tigela</h6>
+                                        <p>Saucy Pulled Chicken, Grilled Onion And A Slice Of Cheese Served In A Toasted
+                                            Portuguese Roll</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 750.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Pulled Chicken Burger</h6>
+                                        <p>Saucy Pulled Chicken, Grilled Onion And A Slice Of Cheese Served In A Toasted
+                                            Portuguese Roll</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 750.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+
+
+
+
+                            </div>
+                        </div>
+                        <!-- CARD -->
+                        <!-- CARD -->
+                        <div class="card">
+                            <div class="card-img" style="background-image: url('assets/imgs/1611900110278057156.jpg');">
+                                <h3 class="mb-0">Sides</h3>
+                            </div>
+                            <div class="card-body p-0">
+
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>PERi-PERi Chips</h6>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 350.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Spicy Rice</h6>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 150.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Spicy Rice</h6>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 150.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Spicy Rice</h6>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 150.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+                                <!-- food-item -->
+                                <div class="food-item d-flex justify-content-between">
+                                    <div class="">
+                                        <h6>Spicy Rice</h6>
+                                    </div>
+                                    <div class="text-end">
+                                        <p class="text-uppercase">from</p>
+                                        <p class="price">Rs. 150.00</p>
+                                    </div>
+                                </div>
+                                <!-- food-item -->
+
+
+
+                            </div>
+                        </div>
+                        <!-- CARD -->
+
+
+                    </div>
+                    <!-- COL END -->
+
+                </div>
+
+            </div>
+            <!-- CARDS SECTION END -->
+
+            <!-- CART SECTION START -->
+            <div class="cart-section">
+                <div class="cart-header">
+                    <h3>My Bag</h3>
+                    <button class="close-cart" id="cartClose"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+
+                <div class="cart-content">
+
+                    <div class="cart-items">
+                        <div class="cart-item">
+                            <div class="qty me-2">
+                                <p class="text-nowrap">1 x</p>
+                            </div>
+                            <div class="item-detail">
+                                <h6>Portuguese Salad</h6>
+                                <p class="desc">Crisp Lettuce, Fresh Tomatoes, Spicy Mixed Olives, Cucumber</p>
+                                <div class="mt-2"></div>
+                                <h6>Choose Your Combination</h6>
+                                <p>+ On its own</p>
+
+                                <div class="qty-buttons">
+                                    <button><i class="fa-solid fa-minus"></i></button>
+                                    <button><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                                
+                            </div>
+
+                            <div class="price text-end">
+                                <h6>Rs. 390.00</h6>
+                                <button class="remove-item"><i class="fa-regular fa-trash-can"></i></button>
+                            </div>
+                            
+                        </div>
+                        <div class="cart-item">
+                            <div class="qty me-2">
+                                <p class="text-nowrap">1 x</p>
+                            </div>
+                            <div class="item-detail">
+                                <h6>Portuguese Salad</h6>
+                                <p class="desc">Crisp Lettuce, Fresh Tomatoes, Spicy Mixed Olives, Cucumber</p>
+                                <div class="mt-2"></div>
+                                <h6>Choose Your Combination</h6>
+                                <p>+ On its own</p>
+
+                                <div class="qty-buttons">
+                                    <button><i class="fa-solid fa-minus"></i></button>
+                                    <button><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                                
+                            </div>
+
+                            <div class="price text-end">
+                                <h6>Rs. 390.00</h6>
+                                <button class="remove-item"><i class="fa-regular fa-trash-can"></i></button>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                  
+
+                    <!-- IF NO ITEMS IN CART -->
+                    <div class="no-items d-none">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <h2>hungry?<br />
+                            Start filling up your cart!</h2>
+                    </div>
+                </div>
+                <!-- IF NO ITEMS IN CART -->
+
+                  <!-- CART-TOTAL -->
+                  <div class="cart-total">
+                    <ul>
+                        <li>
+                            <p>Subtotal</p>
+                            <p>Rs. 800.00</p>
+                        </li>
+                        <li>
+                            <p>Delivery Charges</p>
+                            <p>Rs. 140.00</p>
+                        </li>
+                        <li>
+                            <p>Tax (16%)</p>
+                            <p>Rs. 134.40</p>
+                        </li>
+                        <li>
+                            <p>Grand total (Incl. Tax)</p>
+                            <p>Rs. 1,113.60</p>
+                        </li>
+                    </ul>
+                    <small>*To apply Promo Code, please proceed to Checkout</small>
+                    <div class="d-grid">
+                        <button class="m-btn w-100">Confirm Order</button>
+                    </div>
+                 </div>
+                <!-- CART-TOTAL -->
+
+            </div>
+            <!-- CART SECTION END -->
+
+        </section>
+        <!-- MAIN SECTION END -->
+
+        <!-- FOOTER SECTION START -->
+        <footer class="footer">
+            <div class="ft-content">
+                <ul class="d-flex list-unstyled justify-content-end gap-3">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Services</a></li>
+                    <li><a href="#">Online Ordering Ts & Cs</a></li>
+                </ul>
+                <p class="text-end">Copyright © 2024 | Powered by Blink</p>
+            </div>
+        </footer>
+        <!-- FOOTER SECTION END -->
+
+
+    </div>
+
+    <!-- BOOTSTRAP 5 CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        let cartToggler = document.getElementById("cartToggler");
+        let cartClose = document.getElementById("cartClose");
+        cartToggler.addEventListener("click", function(){
+            document.body.classList.add("cart-active");
+        })
+        cartClose.addEventListener("click", function(){
+            document.body.classList.remove("cart-active");
+        })
+
+
+        // NAV TOGGLER
+        let navToggler = document.getElementById("navToggler");
+        let navClose = document.getElementById("navClose");
+        let navs = document.getElementById("navs");
+
+        navToggler.addEventListener("click", function(){
+            navs.classList.add("active");
+        })
+        navClose.addEventListener("click", function(){
+            navs.classList.remove("active");
+        })
+        
+    </script>
+    
+</body>
+
+</html>
