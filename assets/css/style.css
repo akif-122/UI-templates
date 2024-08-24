@@ -369,6 +369,12 @@ a {
     font-weight: 600;
 }
 
+@media (max-width: 767px){
+    .search-section {
+        height: calc(100vh - 165px);
+    }
+}
+
 /* SEARCH SECTION END */
 
 /* 
