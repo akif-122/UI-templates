@@ -562,23 +562,24 @@
 
 
     <!-- BOTTOM CART TOGGLER FOR SMALL SCREEN -->
-     <div id="btmCartToggler" class="btm-cart-toggler d-flex justify-content-between align-items-center d-block d-md-none">
+    <div id="btmCartToggler"
+        class="btm-cart-toggler d-flex justify-content-between align-items-center d-block d-md-none">
         <div class="icon position-relative">
             <i class="fa-solid fa-bag-shopping"></i>
             <span>0</span>
         </div>
-        
+
         <div class="text-center">
             <p class="text-uppercase">Bag It</p>
         </div>
         <div class="text-end">
-            <p >Rs. 400.00</p>
+            <p>Rs. 400.00</p>
         </div>
-        
-     </div>
+
+    </div>
     <!-- BOTTOM CART TOGGLER FOR SMALL SCREEN END -->
-    
-    
+
+
     <div class="wrapper">
 
         <!-- HEADER SECTION START -->
@@ -1389,6 +1390,14 @@
             orderPopup.classList.remove("active");
 
         })
+
+        function setHeight() {
+            const curentHeight = window.innerHeight;
+            cartPopup.style.height = `${curentHeight}px`;
+        }
+
+        window.addEventListener("resize", setHeight);
+        setHeight();        
 
 
     </script>
