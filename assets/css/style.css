@@ -1118,6 +1118,17 @@ body.cart-active .cart-section {
     background-color: red;
 }
 
+@media (max-width: 991px){
+    .cart-popup .submit-btn {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: red;
+    }
+    
+}
+
 .cart-popup .submit-btn button {
     all: unset;
     width: 100%;
