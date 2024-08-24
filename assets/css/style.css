@@ -28,9 +28,7 @@
     background-color: #8c8d8d4d;
     border-radius: 10px;
 }
-html{
-    height: 100svh;
-}
+
 body {
     font-family: "Noto Sans", sans-serif;
     background: url("../imgs/bg-pattern-flowery.svg");
@@ -40,7 +38,6 @@ body {
     background-size: 377px 667px;
     padding-top: 120px;
     height: 100svh;
-    overflow: hidden;
 }
 
 a {
@@ -998,11 +995,9 @@ body.cart-active .cart-section {
 /* PRODUCT TO CART POPUP */
 .p-cart-wrapper{
     height: 100svh;
-    background-color: red;
 }
 .cart-popup {
     position: fixed;
-    background-color: lime;
     top: 0;
     left: 0;
     width: 100vw;
@@ -1115,19 +1110,9 @@ body.cart-active .cart-section {
     left: 0;
     width: 100%;
 
-    background-color: red;
 }
 
-@media (max-width: 991px){
-    .cart-popup .submit-btn {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: red;
-    }
-    
-}
+
 
 .cart-popup .submit-btn button {
     all: unset;
