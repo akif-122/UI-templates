@@ -178,14 +178,14 @@ a {
 
     .popup-wrap {
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         border-radius: 10px;
         padding: 0;
     }
 
     .popup-wrap .popup-text {
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         align-items: start;
         padding-top: 30px;
     }

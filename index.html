@@ -1377,18 +1377,22 @@
         let closeOrderPopup = document.getElementById("closeOrderPopup");
         delivery.addEventListener("click", () => {
             orderPopup.classList.add("active");
+            bodyOverflow("hidden");
         })
         pickup.addEventListener("click", () => {
             orderPopup.classList.add("active");
+            bodyOverflow("hidden");
+
         })
         closeOrderPopup.addEventListener("click", () => {
             orderPopup.classList.remove("active");
+
         })
 
         letsOrder.addEventListener("click", () => {
             mainPopup.classList.remove("active");
             orderPopup.classList.remove("active");
-
+            bodyOverflow("auto");
         })
 
         function bodyOverflow(value = "auto"){
