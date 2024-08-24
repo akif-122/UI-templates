@@ -1012,10 +1012,17 @@ body.cart-active .cart-section {
     background-color: var(--white);
     z-index: 10000;
     transition: .5s;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .cart-popup.active {
     transform: translateY(0%);
+    opacity: 1;
+    pointer-events: all;
+
+
+
 }
 
 .cart-popup .close-cartPopup {
