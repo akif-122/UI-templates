@@ -28,7 +28,9 @@
     background-color: #8c8d8d4d;
     border-radius: 10px;
 }
-
+html{
+    height: 100svh;
+}
 body {
     font-family: "Noto Sans", sans-serif;
     background: url("../imgs/bg-pattern-flowery.svg");
@@ -37,6 +39,8 @@ body {
     background-repeat: repeat;
     background-size: 377px 667px;
     padding-top: 120px;
+    height: 100svh;
+    overflow: hidden;
 }
 
 a {
