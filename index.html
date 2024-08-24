@@ -1315,6 +1315,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
 
     <script>
+        // SIDE CART TOGGLE
         let cartToggler = document.getElementById("cartToggler");
         let cartClose = document.getElementById("cartClose");
         let btmCartToggler = document.getElementById("btmCartToggler");
@@ -1365,7 +1366,7 @@
         closeCartPopup.addEventListener("click", () => {
             cartPopup.classList.remove("active")
             bodyOverflow("auto");
-            
+
         });
 
         cartTo.forEach(to => {
@@ -1396,11 +1397,7 @@
 
         })
 
-        if(mainPopup.classList.contains("active")){
-            bodyOverflow("hidden");
-        }else{
-            bodyOverflow("auto");
-        }
+        
 
         letsOrder.addEventListener("click", () => {
             mainPopup.classList.remove("active");
@@ -1421,6 +1418,13 @@
 
         window.addEventListener("resize", setHeight);
         setHeight();
+
+        // CHECK IF STARTUP POPUP IS ACTIVE
+        if (mainPopup.classList.contains("active")) {
+            bodyOverflow("hidden");
+        } else {
+            bodyOverflow("auto");
+        }
 
 
     </script>
