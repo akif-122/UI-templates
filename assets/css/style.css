@@ -992,6 +992,9 @@ body.cart-active .cart-section {
 
 
 /* PRODUCT TO CART POPUP */
+.p-cart-wrapper{
+    height: 100svh;
+}
 .cart-popup {
     position: fixed;
     top: 0;
