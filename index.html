@@ -1393,7 +1393,7 @@
 
         function setHeight() {
             const curentHeight = window.innerHeight;
-            cartPopup.style.height = `${curentHeight}px`;
+            document.body.style.height = `${curentHeight}px`;
         }
 
         window.addEventListener("resize", setHeight);
