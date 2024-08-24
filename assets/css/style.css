@@ -994,9 +994,11 @@ body.cart-active .cart-section {
 /* PRODUCT TO CART POPUP */
 .p-cart-wrapper{
     height: 100svh;
+    background-color: red;
 }
 .cart-popup {
     position: fixed;
+    background-color: lime;
     top: 0;
     left: 0;
     width: 100vw;
