@@ -182,13 +182,13 @@
     <!-- USER POPUP MODAL END-->
 
     <!-- PRODUCT TO CART POPUP -->
-    <section class="cart-popup" id="cartPopup">
+    <section class="cart-popup h-100" id="cartPopup">
         <button class="close-cartPopup" id="closeCartPopup"><i class="fa-solid fa-xmark"></i></button>
 
 
 
         <div class="row g-0">
-            <div class="col-lg-6 order-1 order-lg-0 position-relative h-100">
+            <div class="col-lg-6 order-1 order-lg-0 position-relative h-100 ">
                 <div class="p-cart-wrap">
                     <div class="cart-popup-detail">
                         <div class="p-cart-text">
@@ -335,7 +335,7 @@
                 <!--  -->
 
             </div>
-            <div class="col-lg-6 order-0 order-lg-1">
+            <div class="col-lg-6 order-0 order-lg-1 h">
                 <div class="product-img">
                     <img src="assets/imgs/16098340701305638350.jpg" width="100%" alt="">
                 </div>
@@ -1320,12 +1320,17 @@
         let btmCartToggler = document.getElementById("btmCartToggler");
         cartToggler.addEventListener("click", function () {
             document.body.classList.add("cart-active");
+
         })
         btmCartToggler.addEventListener("click", function () {
             document.body.classList.add("cart-active");
+            bodyOverflow("hidden");
+
         })
         cartClose.addEventListener("click", function () {
             document.body.classList.remove("cart-active");
+            bodyOverflow("");
+
         })
 
 
@@ -1359,12 +1364,14 @@
         let cartPopup = document.getElementById("cartPopup");
         closeCartPopup.addEventListener("click", () => {
             cartPopup.classList.remove("active")
+            bodyOverflow("auto");
+            
         });
 
         cartTo.forEach(to => {
             to.addEventListener("click", () => {
                 cartPopup.classList.add("active")
-
+                bodyOverflow("hidden");
             })
         })
 
@@ -1389,13 +1396,19 @@
 
         })
 
+        if(mainPopup.classList.contains("active")){
+            bodyOverflow("hidden");
+        }else{
+            bodyOverflow("auto");
+        }
+
         letsOrder.addEventListener("click", () => {
             mainPopup.classList.remove("active");
             orderPopup.classList.remove("active");
             bodyOverflow("auto");
         })
 
-        function bodyOverflow(value = "auto"){
+        function bodyOverflow(value = "auto") {
             document.body.style.overflow = value;
         }
 
@@ -1407,7 +1420,7 @@
         }
 
         window.addEventListener("resize", setHeight);
-        setHeight();        
+        setHeight();
 
 
     </script>
